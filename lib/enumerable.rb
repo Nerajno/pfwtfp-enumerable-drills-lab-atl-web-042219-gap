@@ -34,7 +34,10 @@ def using_all?(arr)
     arr.all?{|item| item.even? }
 end
 
-def using_any?(arr)
-  arr.any? { |item| item.to_a?(Integer)}
-end
+# def using_any?(arr)
+#   arr.any? { |item| item.to_a?(Integer)}
+# enda
 
+def using_any?(array)
+  array.any? { |int| int.is_a?(Integer)}
+end
